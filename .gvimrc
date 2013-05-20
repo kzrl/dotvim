@@ -1,3 +1,5 @@
+call pathogen#infect()
+call pathogen#helptags()
 set hidden
 set number
 set ruler
@@ -10,7 +12,6 @@ color desert
 set tabstop=4
 set shiftwidth=4
 set noexpandtab
-call pathogen#infect()
 filetype plugin on
 set autoindent
 set smartindent
