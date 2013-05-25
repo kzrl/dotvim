@@ -10,7 +10,6 @@ Installing
 ----------
 
 ```
-cd ~
 git clone http://github.com/kzrl/dotvim.git ~/.vim
 ln -s ~/.vim/vimrc ~/.vimrc
 ln -s ~/.vim/gvimrc ~/.gvimrc
