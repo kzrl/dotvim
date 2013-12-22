@@ -17,3 +17,4 @@ set autoindent
 set smartindent
 set cindent
 set background=dark
+set guioptions-=T  "remove toolbar
