@@ -5,7 +5,7 @@ set number
 set ruler
 set encoding=utf-8
 set nocompatible
-set guifont=Ubuntu\ Mono\ 14
+set guifont=Liberation\ Mono\ 14
 syntax on
 filetype plugin indent on
 color desert
