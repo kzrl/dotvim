@@ -3,7 +3,7 @@ dotvim
 
 My vim plugins and vimrc
 
-Thanks and credit to: http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
+Credits: http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
 
 
 Installing
@@ -12,7 +12,6 @@ Installing
 ```
 git clone http://github.com/kzrl/dotvim.git ~/.vim
 ln -s ~/.vim/vimrc ~/.vimrc
-ln -s ~/.vim/gvimrc ~/.gvimrc
 cd ~/.vim
 git submodule update --init
 ```

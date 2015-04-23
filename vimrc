@@ -25,11 +25,22 @@ set nomousehide
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 function! NumberToggle()
-	if(&relativenumber == 1)
-		set number
-	else
-		set relativenumber
-	endif
+  if(&relativenumber == 1)
+    set number
+  else
+    set relativenumber
+  endif
 endfunc
 
 nnoremap <C-n> :call NumberToggle()<cr>
+
+" Some Linux distributions set filetype in /etc/vimrc.
+" Clear filetype flags before changing runtimepath to force Vim to reload them.
+if exists("g:did_load_filetypes")
+  filetype off
+  filetype plugin indent off
+endif
+set runtimepath+=/home/karlcordes/src/go/misc/vim " replace $GOROOT with the output of: go env GOROOT
+filetype plugin indent on
+syntax on
+
